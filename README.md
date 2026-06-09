@@ -1,6 +1,15 @@
-# School Management System
+# 🏫 School Management System
 
-A full-stack school management system delivered as a Windows desktop application via Electron. The system handles student enrollment, academic tracking, financial transactions (including walk-in payments), and administrative reporting for any school that deploys it.
+[![Electron](https://img.shields.io/badge/Electron-42.2.0-47848F?style=flat&logo=electron)](https://www.electronjs.org/)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=flat&logo=react)](https://react.dev/)
+[![Django](https://img.shields.io/badge/Django-REST-092E20?style=flat&logo=django)](https://www.django-rest-framework.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-13+-336791?style=flat&logo=postgresql)](https://www.postgresql.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=flat&logo=nodedotjs)](https://nodejs.org/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat)]()
+
+---
+
+> A full-stack school management system delivered as a Windows desktop application via Electron. Handles student enrollment, academic tracking, financial transactions, and administrative reporting.
 
 **Electron Compatibility:** v42.2.0 (compatible with Windows 7+)
 
@@ -298,24 +307,43 @@ To change the school name, logo, contact info, etc. at runtime, use the **School
 
 ## Known Notes
 
-1. **ThemeContext** is a stub kept for API compatibility - all pages render in light mode.
-2. **SchoolConfiguration** is a singleton (`pk=1`). Use `python manage.py reset_school_config` to revert to defaults.
-3. **NSIS installer** requires admin rights to install (Windows per-machine symlinks).
-4. **Payment method values** are case-sensitive: `Cash`, `Card`, `GCash`, `Bank Transfer`, `Check`.
-5. The product executable filename in `package.json` is still labeled "usat-school-management-system" for backward compatibility with the existing installer name; update the `name`, `productName`, and `appId` fields in `package.json` to rebrand.
+> [!NOTE]
+> **ThemeContext** is a stub kept for API compatibility — all pages render in light mode.
+
+> [!NOTE]
+> **SchoolConfiguration** is a singleton (`pk=1`). Use `python manage.py reset_school_config` to revert to defaults.
+
+> [!NOTE]
+> **NSIS installer** requires admin rights to install (Windows per-machine symlinks).
+
+> [!IMPORTANT]
+> **Payment method values** are case-sensitive: `Cash`, `Card`, `GCash`, `Bank Transfer`, `Check`.
+
+> [!NOTE]
+> The product executable filename in `package.json` is still labeled "usat-school-management-system" for backward compatibility. Update the `name`, `productName`, and `appId` fields in `package.json` to rebrand.
 
 ---
 
 ## Development Status
 
-- [x] Light-only theme across all 18 pages
-- [x] School configuration singleton (frontend + backend)
-- [x] School branding in admin (Django + Jazzmin) and cashier receipts
-- [x] Walk-in customer support in Cashier
-- [x] Receipt shows school name and item correctly
-- [x] Revenue reports with horizontal stat layout
-- [x] Electron production build (x64 + ia32) with `app.getAppPath()` fix
-- [x] Migrations applied and school config reset to generic defaults
-- [x] NSIS installer built successfully
-#   M a n a g e m e n t - S y s t e m - f o r - P r i v a t e - S c h o o l  
- 
+| Feature | Status |
+|---------|--------|
+| Light-only theme across all 18 pages | ✅ Done |
+| School configuration singleton (frontend + backend) | ✅ Done |
+| School branding in admin (Django + Jazzmin) and cashier receipts | ✅ Done |
+| Walk-in customer support in Cashier | ✅ Done |
+| Receipt shows school name and item correctly | ✅ Done |
+| Revenue reports with horizontal stat layout | ✅ Done |
+| Electron production build (x64 + ia32) with `app.getAppPath()` fix | ✅ Done |
+| Migrations applied and school config reset to generic defaults | ✅ Done |
+| NSIS installer built successfully | ✅ Done |
+
+---
+
+## License
+
+This project is licensed under the **MIT License**.
+
+---
+
+*Made with ❤️ for schools everywhere*
