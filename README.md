@@ -320,7 +320,7 @@ To change the school name, logo, contact info, etc. at runtime, use the **School
 > **Payment method values** are case-sensitive: `Cash`, `Card`, `GCash`, `Bank Transfer`, `Check`.
 
 > [!NOTE]
-> The product executable filename in `package.json` is still labeled "usat-school-management-system" for backward compatibility. Update the `name`, `productName`, and `appId` fields in `package.json` to rebrand.
+> The product executable filename in `package.json` is still labeled "school-management-system" for backward compatibility. Update the `name`, `productName`, and `appId` fields in `package.json` to rebrand.
 
 ---
 
